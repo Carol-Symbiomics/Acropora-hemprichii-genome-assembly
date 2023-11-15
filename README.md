@@ -1,4 +1,4 @@
-# Acropora-hemprichii-genome-assembly-and-annotation
+# *Acropora hemprichii* genome assembly and annotation
 This repository contains detail script for the genome assembly of the coral *Acropora hemprichii* combining short and long reads. The annotation of the assembled genome was done using funannotate v1.8.16. The publication of the *Acropora hemprichii* genome can be found here: ...
 
 # Assembly
