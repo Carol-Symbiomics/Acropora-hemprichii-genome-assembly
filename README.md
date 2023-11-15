@@ -7,5 +7,5 @@ Filtered paired-end reads were used to assembled a denovo genome using the progr
 
 Buitrago-López, C., Mariappan, K. G., Cárdenas, A., Gegner, H. M., & Voolstra, C. R. (2020). The Genome of the Cauliflower Coral Pocillopora verrucosa. Genome Biology and Evolution, 12(10), 1911–1917. https://doi.org/10.1093/gbe/evaa184
 
-## ANNOTATION
+# ANNOTATION
 
