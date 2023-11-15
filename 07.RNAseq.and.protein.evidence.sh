@@ -1,4 +1,18 @@
-## Preparing RNASeq evidence
+## Preparing RNASeq evidence ##
+
+## Install packages through conda
+
+# STAR splice-aware aligner
+conda install -c bioconda star
+
+# samtools to merge sam and bam files
+conda install -c bioconda samtools
+
+# StringTie splice-aware aligner (for expression evidence)
+conda install -c bioconda springtie
+
+# install transdecoder 
+conda install transdecoder
 
 ## Indexing the assembled genome
 STAR --runThreadN 50 --runMode genomeGenerate --genomeDir Ahemp_index --genomeFastaFiles Ahemp.gapclosed_f2.fasta --genomeSAindexNbases 10
