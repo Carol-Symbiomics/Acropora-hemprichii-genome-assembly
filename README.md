@@ -6,14 +6,17 @@ Short reads were preprocessed checking for quality, removing universal adapters,
 
 * 01.Short.reads.preprocessing.sh
 
-Filtered paired-end reads were used to assembled a denovo genome using the program DISCOVAR (sensu Buitrago-Lopez, 2020). 
+Filtered paired-end reads were used to assembled a _de novo_ genome using the program DISCOVAR (sensu Buitrago-Lopez, 2020). 
 
 * 02.discovardenovo.genome.assembly.sh
 * 03.filter.discovar.assembly.sh
 
-Long reads were then used to scaffold and fill gaps.
+Long reads were used for _de novo_ genome assembly using Supernova v2.1.1.
 
 * 04.10xreads.genome.assembly.sh
+
+The long-read _de novo_ genome assembly was scaffolded using the highly complete genome assembly of _Acropora tenuis_ as a reference. Assembly gaps were filled using the resulting contigs of the short-read _de novo_ assembly.
+
 * 05.10x.genome.scaffolding.gapfilling.sh
 
 # Annotation
