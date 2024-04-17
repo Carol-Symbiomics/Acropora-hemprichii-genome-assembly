@@ -1,37 +1,42 @@
 # *Acropora hemprichii* genome assembly and annotation
 This repository contains detail script for the genome assembly of the coral *Acropora hemprichii* combining short and long reads. The annotation of the assembled genome was done using funannotate v1.8.16. The publication of the *Acropora hemprichii* genome can be found here: ...
 
+# Genome Size Estimation
+Illumina short-reads and 10X Chromium reads were used for k-mer based genome size estimation.
+
+* 01.genome.size.estimation.sh
+
 # Assembly
+10X Chromium reads were used for _de novo_ genome assembly using Supernova v2.1.1.
+
+* 02.10xreads.genome.assembly.sh
+
 Short reads were preprocessed checking for quality, removing universal adapters, removing PCR duplicates and filtering out contaminant reads that align to Symbiodiniaceae, bacteria or viruses (sensu Buitrago-Lopez, 2020). 
 
-* 01.Short.reads.preprocessing.sh
+* 03.Short.reads.preprocessing.sh
 
 Filtered paired-end reads were used to assembled a _de novo_ genome using the program DISCOVAR (sensu Buitrago-Lopez, 2020). 
 
-* 02.discovardenovo.genome.assembly.sh
-* 03.filter.discovar.assembly.sh
+* 04.discovardenovo.genome.assembly.sh
+* 05.filter.discovar.assembly.sh
 
-Long reads were used for _de novo_ genome assembly using Supernova v2.1.1.
+The 10X Chromium reads _de novo_ genome assembly was scaffolded using the highly complete genome assembly of _Acropora tenuis_ as a reference. Assembly gaps were filled using the resulting contigs of the Illumina short-read _de novo_ assembly.
 
-* 04.10xreads.genome.assembly.sh
-
-The long-read _de novo_ genome assembly was scaffolded using the highly complete genome assembly of _Acropora tenuis_ as a reference. Assembly gaps were filled using the resulting contigs of the short-read _de novo_ assembly.
-
-* 05.10x.genome.scaffolding.gapfilling.sh
+* 06.10x.genome.scaffolding.gapfilling.sh
 
 # Annotation
 
 Soft masking of repeats in the assembled genome using RepeatMasker and RepeatModeler.
 
-* 06.repeat.masking.sh
+* 07.repeat.masking.sh
 
 Transcript and protein evidence were generated for the structural annotation using STAR, StringTie and UniProt Database.
 
-* 07.RNAseq.and.protein.evidence.sh
+* 08.RNAseq.and.protein.evidence.sh
 
 Functional annotation was generated using funannotate (Palmer & Staijch, 2020). 
 
-* 08.funannotate.sh
+* 09.funannotate.sh
 
 # References
 
