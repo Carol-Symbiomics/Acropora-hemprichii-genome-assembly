@@ -1,4 +1,4 @@
-name: null
+name: assembly
 
 channels:
   - conda-forge
