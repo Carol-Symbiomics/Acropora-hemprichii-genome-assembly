@@ -1,5 +1,5 @@
 # *Acropora hemprichii* genome assembly and annotation
-This repository contains detail script for the genome assembly of the coral *Acropora hemprichii* combining short and long reads. The annotation of the assembled genome was done using funannotate v1.8.16. The publication of the *Acropora hemprichii* genome can be found here: ...
+This repository contains detail script for the genome assembly of the coral *Acropora hemprichii* combining Illumina short-read and 10X Chromium read sequencing. The annotation of the assembled genome was done using funannotate v1.8.16. The publication of the *Acropora hemprichii* genome can be found here: ...
 
 # Genome Size Estimation
 Illumina short-reads and 10X Chromium reads were used for k-mer based genome size estimation.
