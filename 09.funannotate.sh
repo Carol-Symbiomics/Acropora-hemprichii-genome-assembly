@@ -32,8 +32,8 @@ git clone https://github.com/KorfLab/SNAP.git && cd SNAP/ && make && cp forge /o
 funannotate test -t predict
 
 ## Gene prediction
-# use the latest genome assembly Ahemp.gapclosed_f2.fasta.masked and remove gene models <100aa (--min_protlen 100)
-/PATH/TO/funannotate-docker predict -i Ahemp.gapclosed_f2.fasta.masked -s "Acropora hemprichii" -o funannotate_predict --name Ahemp --rna_bam Ahemp_RNASeqAll.STAR.bam --stringtie Ahemp_RNASeqAll.Stringtie.gtf --protein_evidence uniprot_Acropora.faa.fasta --transcript_evidence Ahemp_RNASeqAll.transcripts.fasta  --organism other --busco_db metazoa --min_protlen 100 --cpus 50
+# use the latest genome assembly Ahemp.RedSea.gaplosed_f2.ukon.fasta.masked and remove gene models <100aa (--min_protlen 100)
+/PATH/TO/funannotate-docker predict -i Ahemp.RedSea.gaplosed_f2.ukon.fasta.masked -s "Acropora hemprichii" -o funannotate_predict --name Ahemp --rna_bam Ahemp_RNASeqAll.STAR.bam --stringtie Ahemp_RNASeqAll.Stringtie.gtf --protein_evidence uniprot_Acropora.faa.fasta --transcript_evidence Ahemp_RNASeqAll.transcripts.fasta  --organism other --busco_db metazoa --min_protlen 100 --cpus 50
 
 ## prediction can be updated by adding UTR, for this all RNASeq data were merged and running following command:
 funannotate update -i funannotate_predict --species "Acropora hemprichii" -l Ahemp_RNASeqAll_1.fastq.gz -r Ahemp_RNASeqAll_2.fastq.gz --cpus 50
