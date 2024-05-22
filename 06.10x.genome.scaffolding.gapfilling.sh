@@ -33,3 +33,6 @@ python2.7 /home/buitracn/Genomes/Genome.tools/busco/scripts/run_BUSCO.py \
 # Check for contiguity uing QUAST
 /home/linuxbrew/.linuxbrew/bin/quast -s -o ./QUAST -t 30  gapclosed.fasta
 # contig N50 22882; scaffold N50 1374027
+
+# Final genome after filtering in BTK (https://blobtoolkit.genomehubs.org/) and uploaded to NCBI is:
+# Ahemp.RedSea.gaplosed_f2.ukon.fasta
