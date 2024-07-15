@@ -9,12 +9,6 @@ docker pull oushujun/edta:2.0.0
 docker run -v $PWD:/in -w /in dfam/tetools:latest BuildDatabase -name Ahemp_genome Ahemp.RedSea.gaplosed_f2.ukon.fasta
 docker run -v $PWD:/in -w /in dfam/tetools:latest RepeatModeler -database Ahemp_genome -LTRStruct -threads 40
 
-for i in `ls *.fna|sed 's/_genomic.fna//g';
-do
-    docker run -v $PWD:/in -w /in dfam/tetools:latest BuildDatabase -name $i ${i}_genomic.fna
-    docker run -v $PWD:/in -w /in dfam/tetools:latest RepeatModeler -database $i -LTRStruct -threads 40;
-done
-
 # # Identifying Repeats using EDTA # #
 docker run -v $PWD:/in -w /in biocontainers/edta:2.0.0 EDTA.pl --genome Ahemp.RedSea.gaplosed_f2.ukon.fasta --sensitive 1 --anno 1 -t 32
 
