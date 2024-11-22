@@ -30,7 +30,7 @@ busco -i funannotate_predict/predict_results/Acropora_hemprichii.proteins.fa -m 
 ## Interproscan and eggNOG-mapper searches
 mkdir Ahemp_funano_iprosc
 /PATH/TO/interproscan.sh -t p --cpu 30 -goterms -pa -i funannotate_predict/predict_results/Acropora_hemprichii.proteins.fa -d Ahemp_funano_iprosc
-/PATH/TO/emapper.py --cpu 30 -m diamond --data_dir /share/databases/eggnog/ -i funannotate_predict/predict_results/Acropora_hemprichii.proteins.fa -o Ahemp_eggnog
+/PATH/TO/emapper.py --cpu 30 -m diamond --data_dir /path/to/database/eggnog/ -i funannotate_predict/predict_results/Acropora_hemprichii.proteins.fa -o Ahemp_eggnog
 
 ## Implement annotation using funannotate
 /PATH/TO/funannotate-docker annotate -i funannotate_predict/ -s "Acropora hemprichii" -o funannotate_anno --busco_db  metazoa --eggnog  Ahemp_eggnog.emapper.annotations --iprscan Ahemp_funano_iprosc.xml --phobius phobius.results.txt  --cpus 40
