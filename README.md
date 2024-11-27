@@ -1,5 +1,5 @@
 # *Acropora hemprichii* genome assembly and annotation
-This repository contains detail scripts for the genome assembly of the coral *Acropora hemprichii* combining Illumina short-read and 10X Chromium read sequencing. The annotation of the assembled genome was done using funannotate v1.8.16. The reference genome is uploaded to NCBI under accession number: JAZHQP000000000. The publication of the *Acropora hemprichii* genome can be found here (open access): [[https://www.nature.com/articles/s41597-024-04080-8](https://www.nature.com/articles/s41597-024-04080-8); genome: [ahem.reefgenomcis.org](http://ahem.reefgenomics.org)
+This repository contains detail scripts for the genome assembly of the coral *Acropora hemprichii* combining Illumina short-read and 10X Chromium read sequencing. The annotation of the assembled genome was done using funannotate v1.8.16. The reference genome is uploaded to NCBI under accession number: JAZHQP000000000. The publication of the *Acropora hemprichii* genome can be found here (open access): [https://www.nature.com/articles/s41597-024-04080-8](https://www.nature.com/articles/s41597-024-04080-8) ; genome: [ahem.reefgenomcis.org](http://ahem.reefgenomics.org)
 
 # Genome Size Estimation
 Illumina short-reads and 10X Chromium reads were used for k-mer based genome size estimation.
