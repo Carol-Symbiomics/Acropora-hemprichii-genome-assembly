@@ -9,7 +9,7 @@ conda install -c bioconda star
 conda install -c bioconda samtools
 
 # StringTie splice-aware aligner (for expression evidence)
-conda install -c bioconda springtie
+conda install -c bioconda stringtie
 
 # install transdecoder 
 conda install transdecoder
